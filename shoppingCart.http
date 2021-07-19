@@ -1,0 +1,16 @@
+@baseUrl = localhost:5000
+
+###
+
+GET {{baseUrl}}/shoppingCart/123
+
+###
+
+POST {{baseUrl}}/shoppingCart/123/items
+Content-Type: application/json
+
+[1, 2]
+
+###
+
+GET {{baseUrl}}/events?start=4
